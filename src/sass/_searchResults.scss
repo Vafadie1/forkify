@@ -7,6 +7,12 @@
 .results {
   list-style: none;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: 768px) {
+    body {
+      flex-wrap: wrap;
+    }
+  }
 }
 
 .pagination {
