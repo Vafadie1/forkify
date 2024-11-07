@@ -34,6 +34,26 @@
     width: 2.25rem;
     fill: currentColor;
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 1.2rem 3rem;
+    font-size: 1.3rem;
+
+    svg {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+
+    svg {
+      height: 1.8rem;
+      width: 1.8rem;
+    }
+  }
 }
 
 .btn--small {
@@ -51,6 +71,16 @@
       height: 1.75rem;
       width: 1.75rem;
       fill: currentColor;
+    }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+
+      svg {
+        height: 1.5rem;
+        width: 1.5rem;
+      }
     }
   }
 }
@@ -88,6 +118,16 @@
   &:focus {
     outline: none;
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.2rem;
+    padding: 0.7rem 1rem;
+
+    svg {
+      height: 1.4rem;
+      width: 1.4rem;
+    }
+  }
 }
 
 .btn--round {
@@ -97,7 +137,6 @@
   cursor: pointer;
   height: 4.5rem;
   width: 4.5rem;
-  // margin-left: auto;
   transition: all 0.2s;
 
   display: flex;
@@ -116,6 +155,16 @@
     height: 2.5rem;
     width: 2.5rem;
     fill: #fff;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 4rem;
+    width: 4rem;
+
+    svg {
+      height: 2.2rem;
+      width: 2.2rem;
+    }
   }
 }
 
@@ -150,6 +199,16 @@
   &:not(:last-child) {
     margin-right: 0.3rem;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 1.8rem;
+    width: 1.8rem;
+
+    svg {
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+  }
 }
 
 .heading--2 {
@@ -159,7 +218,16 @@
   text-transform: uppercase;
   margin-bottom: 2.5rem;
   text-align: center;
-  // transform: skewY(-3deg);
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
 }
 
 .link:link,
@@ -177,15 +245,12 @@
     fill: $color-primary;
     animation: rotate 2s infinite linear;
   }
-}
 
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
+  @media only screen and (max-width: $bp-small) {
+    svg {
+      height: 4rem;
+      width: 4rem;
+    }
   }
 }
 
@@ -194,7 +259,6 @@
   max-width: 40rem;
   margin: 0 auto;
   padding: 5rem 4rem;
-
   display: flex;
 
   svg {
@@ -209,5 +273,28 @@
     font-size: 1.8rem;
     line-height: 1.5;
     font-weight: 600;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 3rem 2rem;
+
+    p {
+      font-size: 1.6rem;
+    }
+
+    svg {
+      height: 2.5rem;
+      width: 2.5rem;
+    }
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
