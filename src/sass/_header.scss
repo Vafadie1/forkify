@@ -1,16 +1,18 @@
 .header {
   grid-area: head;
   background-color: $color-grey-light-1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
+    z-index: 1;
+    background-color: #f9f5f3;
+    grid-area: head;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
   &__logo {
     margin-left: 4rem;
     height: 4.6rem;
     display: block;
   }
-}
+
 
 .search {
   background-color: #fff;
