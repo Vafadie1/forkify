@@ -18,6 +18,14 @@
     &--active {
       background-color: $color-grey-light-1;
     }
+
+    @media only screen and (max-width: $bp-medium) {
+      padding: 1.2rem 2.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 1rem 1.5rem;
+    }
   }
 
   &__fig {
@@ -52,6 +60,12 @@
       object-fit: cover;
       transition: all 0.3s;
     }
+
+    @media only screen and (max-width: $bp-small) {
+      flex: 0 0 4.5rem;
+      height: 4.5rem;
+      margin-right: 1.5rem;
+    }
   }
 
   &__data {
@@ -60,20 +74,33 @@
     grid-template-columns: 1fr 2rem;
     row-gap: 0.1rem;
     align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-template-columns: 1fr 1.5rem;
+    }
   }
 
   &__title {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
     font-size: 1.45rem;
     color: $color-primary;
     text-transform: uppercase;
     font-weight: 600;
 
-    // This is how text is truncated!
     text-overflow: ellipsis;
     max-width: 25rem;
     white-space: nowrap;
     overflow: hidden;
+
+    @media only screen and (max-width: $bp-medium) {
+      font-size: 1.3rem;
+      max-width: 20rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.2rem;
+      max-width: 15rem;
+    }
   }
 
   &__publisher {
@@ -81,18 +108,20 @@
     color: $color-grey-dark-2;
     text-transform: uppercase;
     font-weight: 600;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1rem;
+    }
   }
 
   &__user-generated {
     background-color: darken($color-grey-light-2, 2%);
-
     display: flex;
     align-items: center;
     justify-content: center;
     height: 2rem;
     width: 2rem;
     border-radius: 10rem;
-
     margin-left: auto;
     margin-right: 1.75rem;
 
@@ -100,6 +129,17 @@
       height: 1.2rem;
       width: 1.2rem;
       fill: $color-primary;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      height: 1.8rem;
+      width: 1.8rem;
+      margin-right: 1rem;
+
+      svg {
+        height: 1rem;
+        width: 1rem;
+      }
     }
   }
 }
