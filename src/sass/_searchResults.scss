@@ -2,22 +2,11 @@
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
-
-  @include respond(phone) {
-    padding: 1.5rem 0;
-  }
 }
 
 .results {
   list-style: none;
   margin-bottom: 2rem;
-
-  @include respond(phone) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
-    padding: 1rem;
-  }
 }
 
 .pagination {
