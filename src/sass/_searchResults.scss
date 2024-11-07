@@ -2,11 +2,23 @@
   padding: 3rem 0;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem 0;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1.5rem 0;
+  }
 }
 
 .results {
   list-style: none;
   margin-bottom: 2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin-bottom: 1.5rem;
+  }
 }
 
 .pagination {
@@ -23,8 +35,28 @@
     &--prev {
       float: left;
     }
+
     &--next {
       float: right;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 0 2rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 0 1.5rem;
+
+    &__btn {
+      &--prev,
+      &--next {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+      }
     }
   }
 }
@@ -38,5 +70,18 @@
   .twitter-link:link,
   .twitter-link:visited {
     color: $color-grey-dark-2;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 1.1rem;
+    padding: 0 2rem;
+    margin-top: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    font-size: 1rem;
+    padding: 0 1.5rem;
+    margin-top: 2.5rem;
+    text-align: center;
   }
 }
